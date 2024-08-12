@@ -256,6 +256,9 @@ async function handleFiles(files) {
                     } catch (error) {
                         console.error("Error extracting text:", error);
                     }
+                } else {
+                    console.error("Image does not meet the required dimensions.");
+                }
             };
             img.src = event.target.result;
         };
