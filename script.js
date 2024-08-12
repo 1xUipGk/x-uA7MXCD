@@ -256,10 +256,6 @@ async function handleFiles(files) {
                     } catch (error) {
                         console.error("Error extracting text:", error);
                     }
-                } else {
-                    console.error("Image does not meet the required dimensions.");
-                    alert("The image must be square and larger than 1000px in size.");
-                }
             };
             img.src = event.target.result;
         };
